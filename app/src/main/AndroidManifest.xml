@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moviegenuis">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Movie Genius"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        android:screenOrientation="portrait"
+        <activity android:name="com.example.moviegenuis.Levels"
+         android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.moviegenuis.GuessTheWordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.example.moviegenuis.first"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.moviegenuis.old_work.MainActivity" />
+    </application>
+
+</manifest>

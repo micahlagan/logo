@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="310dp"
+        android:layout_height="355dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="380dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        >
+
+
+        <GridView
+            android:id="@+id/gridViewAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:columnWidth="40dp"
+            android:horizontalSpacing="4dp"
+            android:numColumns="auto_fit"
+            android:padding="4dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp" />
+
+        <GridView
+            android:id="@+id/gridViewSuggest"
+            android:layout_margin="20dp"
+            android:padding="4dp"
+            android:horizontalSpacing="4dp"
+            android:verticalSpacing="4dp"
+            android:columnWidth="40dp"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="@string/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

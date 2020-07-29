@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/et_guess_letter"
+    android:layout_width="50dp"
+    android:textAlignment="center"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    android:text=""
+    android:selectAllOnFocus="true"
+    android:imeOptions="actionNext"
+    android:maxLength="1"
+    android:layout_height="50dp">
+</EditText>
